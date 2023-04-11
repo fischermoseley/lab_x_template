@@ -1,0 +1,22 @@
+---
+cores:
+  my_io_core:
+    type: io
+
+    inputs:
+      spike: 1
+      jet: 12
+      valentine: 6
+      ed: 9
+      ein: 16
+
+    outputs:
+      shepherd: 10
+      wrex: 1
+      tali: 5
+      garrus: 3
+
+uart:
+  port: "auto"
+  baudrate: 115200
+  clock_freq: 100000000
