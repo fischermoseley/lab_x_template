@@ -51,7 +51,7 @@ if { $verbose } {
 # route design and generate bitstream
 
 route_design -directive Explore
-write_bitstream -force $outputDir/final.bit
+write_bitstream -force out.bit
 
 if { $verbose } {
 	report_route_status -file $outputDir/post_route_status.rpt
@@ -64,5 +64,5 @@ if { $verbose } {
 	show_schematic [ get_cells ]
 }
 
-exec sh -c "rm -rf *.jou *.log"
+# exec sh -c "rm -rf *.jou *.log"
 
